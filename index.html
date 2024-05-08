@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+       <!-- <style>
+        body{
+            height:100vh;
+        }
+        .container{
+            height:100vh;
+            width:100%;
+        }
+    </style> -->
+</head>
+<body>
+
+    <!-- <div class="container" id="container">
+
+        <img src="img/hero-img.png" width="300px" id="img">
+        <button onclick="moveon()">click me</button> -->
+    <!-- </div> -->
+    <!-- <button onclick="create()">click me</button> -->
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-menu">
+              <h1>Generate HTML Tag</h1>
+            <form name="elementForm" onsubmit="elementCreator(event)">
+                <select name="element" id="">
+                    <option value="h1">heading 1</option>
+                    <option value="p">paragraph</option>
+                    <option value="div">div</option>
+                    <option value="marquee">Marquee Tag</option>
+                    <option value="mark">Mark Tag</option>
+                    <option value="button">button Tag</option>
+                </select>
+                <input type="text" name="text" placeholder="Enter your value" reuired="true">
+                <button type='submit'>Create</button>
+
+            </form>
+            </div>
+            <div id="animation-card">
+                <h1>Animator</h1>
+                  <select id="animator">
+                      <option value="animate__animated animate__bounce">bounce</option>
+                      <option value="animate__animated animate__flash animate__infinite">Flash</option>
+                      <option value="animate__animated animate__heartBeat animate__infinite">heartbea</option>
+                  </select>
+              </div>
+        </div>
+        <div class="section" id="section">
+            <div class="content">
+             <h1>Preview your create Element</h1>
+             <div class='save-file' id="save-file">
+                
+             </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

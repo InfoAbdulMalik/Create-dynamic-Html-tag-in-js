@@ -1,0 +1,60 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container{
+    background-color:rgb(108, 101, 114);
+    height:100vh;
+}
+.sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:300px;
+    height: 100%;
+    background-color:rgb(139, 143, 62);   
+}
+.section{
+    width:calc(100% - 300px);
+    height:100vh;
+    background-color:rgb(226, 226, 226);
+    margin-left:300px;
+}
+.sidebar-menu,#animation-card{
+    display: flex;
+    flex-direction: column;
+    gap:13px;
+   padding:6px;
+   margin-top:20px;
+   color:white;
+}
+.sidebar-menu h1,#animation-card{
+    font-size: 29px;
+    text-align:center;
+}
+.sidebar-menu form,#animation-card{
+   display:flex;
+   flex-direction: column;
+   gap:20px ;
+   padding:20px;
+}
+.sidebar-menu select, .sidebar-menu input, .sidebar-menu button, #animator{
+    padding:10px;
+    border:none;
+}
+.sidebar-menu button{
+    width:fit-content;
+    padding:10px 20px;
+}
+.sidebar-menu button:hover{
+    background-color: darkorange;
+    border:none;
+}
+.content{
+    padding:20px;
+}
+#animation-card{
+    display:none;
+}
